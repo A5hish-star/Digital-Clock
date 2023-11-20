@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.hero{
+    background-color: aquamarine;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+}
+.clock{
+    color: antiquewhite;
+    position: relative;
+}
+.clock span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#hrs::before{
+    content: 'Hrs';
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    font-size: 1rem;
+}
+#min::before{
+    content: 'min';
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    font-size: 1rem;
+}
+#sec::before{
+    content: 'sec';
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    font-size: 1rem;
+}
